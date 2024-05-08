@@ -1,0 +1,29 @@
+@font-face {font-family: special;
+	src: url(BlackAndWhitePicture-Regular.ttf)
+}
+body {
+	background-image: url();
+	height: 700px
+}
+#navigation-bar {
+	Height: 70px;
+	width: 100vw;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center
+
+}
+a {
+	color: #8f8;
+	font-family: special;
+	text-decoration: none;
+	border: solid #8af 3px;
+	background-color: orange;
+	font-size: 40px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px 5px #f88;
+	text-shadow: 2px 2px 5px blue
+
+}

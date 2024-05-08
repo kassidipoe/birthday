@@ -1,0 +1,65 @@
+@font-face {font-family: special;
+	src: url(SpecialElite-Regular.ttf)
+}
+body {
+	background: linear-gradient(rgb(206, 123, 55), rgb(12, 59, 12));
+	height: 700px
+}
+#navigation-bar {
+	Height: 70px;
+	width: 100vw;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center
+
+}
+a {
+	color: white;
+	font-family: special;
+	text-decoration: none;
+	border: solid black 3px;
+	background-color: orange;
+	font-size: 40px;
+	padding: 10px;
+	border-radius: 10px
+
+}
+
+main {
+	width: 100vw;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+
+
+/* Style for the image */
+#shake-image {
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+}
+
+/* Animation for shaking effect */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

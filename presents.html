@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="stylesheet" href="presents.css"/>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="presents.css"/>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var checkbox = document.getElementById('click');
+            var linkContainer = document.querySelector('.link-container');
 
-	</head>
-	<body>
-		<nav id="navigation-bar">
-			<a>Card</a>
-			<a>Presents</a>
-			<a>Cake</a>
-
-
-	</body>
-	</html>
+            checkbox.addEventListener('change', function() {
+                if (checkbox.checked) {
+                    linkContainer.style.display = 'block';
+                } else {
+                    linkContainer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="birthday-gift">
+    <div class="gift">
+        <input id='click' type='checkbox'>
+        <label class='click' for='click'></label>
+        <div class="wishes"><img id="key" src="key.png"/></div>
+        <div class="sparkles">
+            <div class="spark1"></div>
+            <div class="spark2"></div>
+            <div class="spark3"></div>
+            <div class="spark4"></div>
+            <div class="spark5"></div>
+            <div class="spark6"></div>
+        </div>
+    </div>
+    <div class="link-container">
+        <div class="navigation-menu">
+            <a id="cake-link" href="cake.html">cake</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,53 +1,60 @@
 @font-face {font-family: special;
-	src: url(SpecialElite-Regular.ttf)
+	src: url(BlackAndWhitePicture-Regular.ttf)
+}
+::-webkit-scrollbar {
+    display: none;
 }
 body {
-	background: linear-gradient(rgb(206, 123, 55), rgb(12, 59, 12));
-	height: 700px
+	background-image: url(background.jpg);
+	background-size: 100vw 100%;
+	background-repeat: no-repeat;
+	height: 600px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
 }
 #navigation-bar {
-	Height: 70px;
+	Height: 30px;
 	width: 100vw;
 	text-align: center;
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center
+	align-items: center;
+	position: fixed;
+	top: 70px;
 
 }
-a {
-	color: white;
+.nav-link {
+	color: #8f8;
 	font-family: special;
 	text-decoration: none;
-	border: solid black 3px;
+	border: solid #8af 3px;
 	background-color: orange;
 	font-size: 40px;
 	padding: 10px;
-	border-radius: 10px
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px 5px #f88;
+	text-shadow: 2px 2px 5px blue;
+	margin-top: 10px
 
 }
 
-main {
-	width: 100vw;
-	height: 700px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 
 
 /* Style for the image */
 #shake-image {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     cursor: pointer;
+	margin-top: 200px;
+	margin-left: 30vw
 }
+
 
 /* Animation for shaking effect */
 @keyframes shake {

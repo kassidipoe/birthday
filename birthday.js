@@ -48,8 +48,7 @@ function showNavigationBar() {
     // Create navigation links
     const links = [
         { text: 'card', url: 'card.html' },
-        { text: 'presents', url: 'presents.html' },
-        { text: 'cake', url: 'cake.html' }
+        
     ];
 
     // Create anchor elements for each link
@@ -57,12 +56,22 @@ function showNavigationBar() {
         const anchor = document.createElement('a');
         anchor.textContent = link.text;
         anchor.href = link.url;
+        anchor.classList.add('nav-link'); // Add a class for styling
+        anchor.addEventListener('click', function(event) {
+            // Log to check if the click event is triggered
+            console.log('Clicked on navigation link:', link.url);
+            // Prevent default behavior of anchor click
+            event.preventDefault();
+            // Navigate to the specified URL
+            window.location.href = link.url;
+        });
         navigationBar.appendChild(anchor);
     });
 
     // Append navigation bar to the document body
     document.body.appendChild(navigationBar);
 }
+
 
 // Add event listener to the image
 document.getElementById('shake-image').addEventListener('click', function() {

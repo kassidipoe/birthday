@@ -8,7 +8,7 @@ body {
 	background: radial-gradient(orange, orangered, black);
 	background-size: 100vw 100%;
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	display: flex;

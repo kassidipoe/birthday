@@ -22,11 +22,11 @@ function changeImageAndShowNavBar() {
             image.src = 'img3.png';
         } else if (image.src.endsWith('img3.png')) {
             // URL for the fourth image
-            image.src = 'img4.jpg';
-        } else if (image.src.endsWith('img4.jpg')) {
+            image.src = 'img4.png';
+        } else if (image.src.endsWith('img4.png')) {
             // URL for the fifth image
-            image.src = 'img5.jpg';
-        } else if (image.src.endsWith('img5.jpg')) {
+            image.src = 'img5.png';
+        } else if (image.src.endsWith('img5.png')) {
             // URL for the sixth image
             image.src = 'img6.png';
         } else if (image.src.endsWith('img6.png')) {

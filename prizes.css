@@ -1,0 +1,16 @@
+img {
+width: 150px
+}
+nav
+{
+	position: fixed;
+	top: 40vh;
+	width: 100vw;
+	display: flex;
+	justify-content: space-evenly;
+
+}
+body
+{
+	background: radial-gradient(orange, green)
+}
